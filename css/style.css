@@ -136,6 +136,12 @@
     --coach-form-valid-border-color: #24a148;
     --coach-form-invalid-color: #ea4336;
     --coach-form-invalid-border-color: #ea4336;
+    --coach-color: #E0A458;
+    --coach-color1: #A3B18A;
+}
+
+.coach-color{
+    color: #E0A458;
 }
 
 .redressed {
@@ -144,6 +150,10 @@
 
 .merriweather {
     font-family: 'Merriweather', serif;
+}
+
+.bordor-couleur{
+    border-top: 2px solid #E0A458;
 }
 
 .liquide-glass{
@@ -166,25 +176,36 @@
 
 .span-culinaire{
     font-weight: normal;
-    color: var(--coach-form-valid-border-color);
+    color: var(--coach-color);
 }
 
 .home-active{
-    color: var( --coach-success);
+    color: var( --coach-color);
 }
 
 .home-active:hover{
-    color: var(--coach-success-text-emphasis);
+    color: var(--coach-color1);
 }
 
 .other-link{
-    color: var(--coach-body-bg);
+    color: var(--coach-color1);
 }
 
 .other-link:hover{
-    color: var(--coach-success-text-emphasis);
+    color: var(--coach-color);
 }
 
+
+.fond-couleur{
+    background-color: var(--coach-color);
+    color: #fff;
+}
+
+.fond-couleur:hover{
+    background-color: var(--coach-color);
+    color: #fff;
+    opacity: 0.8;
+}
 
 .video{
     width: 100%;
@@ -212,33 +233,116 @@
     background-color: var( --coach-light-bg-subtle);
 }
 
+
+.couleur-about{
+    background-color: var(--coach-color);
+    color: #fff;
+}
+
+.couleur-about:hover{
+    background-color: var(--coach-color1);
+    color: #fff;
+}
+
+
+
+.espace-exterieur{
+    padding: 30px 20px;
+}
+
 .image-arrondi{
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
-.contact{
+.paragraph{
+    font-size: 12px;
+    margin-top: -25px;
+}
+
+.mw-900{
+    max-width: 900px;
+}
+
+.input-champ{
     width: 100%;
-    height: 80vh;
+    border: 1px solid var(--coach-gray-300);
+    font-size: 15px;
+    color: #000;
+}
+
+.input-champ:focus{
+    outline-color: var(--coach-form-invalid-border-color);
+    box-shadow: 0 0 10px var(--coach-link-hover-color);
+}
+
+.button-couleur{
+    background-color: var(--coach-form-invalid-border-color);
+    color: #fff;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+.button-couleur:hover{
+    background-color: var(--coach-link-hover-color);
+    color: #fff;
+}
+
+.input-footer{
+    border: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-footer:focus{
+    outline-color: var(--coach-form-invalid-border-color);
+    box-shadow: 0 0 10px var(--coach-link-hover-color);
+}
+
+.bouton-subscribe{
+    background-color: var(--coach-form-invalid-border-color);
+    color: #fff;
+    width: 150px;
+}
+
+.bouton-subscribe:hover{
+    background-color: var(--coach-link-hover-color);
+    color: #fff
+}
+
+.back-footer{
+    background-color: var(--coach-black);
+    padding: 60px 0 40px;
     position: relative;
-    display: block;
-    margin: 0 auto -150px auto;
+    margin-top: 80px;
 }
 
-.footer{
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+.back-footer::before{
+    content: " ";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: inherit;
+    border-radius: 100% 100% 0 0 / 50px;
+    transform: scaleY(1.5);
 }
-
 
 .footer-link{
-    font-size: 1.5rem;
-    color: var(--coach-highlight-bg);
-    font-weight: bold;
-    margin-bottom: 30px;
+    color: var(--coach-gray-600);
 }
 
 .footer-link:hover{
-    color: var(--coach-success-text-emphasis);
+    color: #fff;
+}
+
+.footer-hover:hover{
+    color: var(--coach-form-invalid-border-color);
+}
+
+.formulaire{
+    position: relative;
+    margin-bottom: -100px;
 }
