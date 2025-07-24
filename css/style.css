@@ -234,6 +234,20 @@
 }
 
 
+.card-hover{
+    transition: all .5s ease;
+}
+
+.card-hover img{
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.card-hover:hover img{
+    transform: scale(1.1);
+}
+
+
 .couleur-about{
     background-color: var(--coach-color);
     color: #fff;
@@ -243,7 +257,6 @@
     background-color: var(--coach-color1);
     color: #fff;
 }
-
 
 
 .espace-exterieur{
@@ -316,19 +329,10 @@
     padding: 60px 0 40px;
     position: relative;
     margin-top: 80px;
+    border-radius: 100% 100% 0 0 / 50px;
 }
 
-.back-footer::before{
-    content: " ";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-color: inherit;
-    border-radius: 100% 100% 0 0 / 50px;
-    transform: scaleY(1.5);
-}
+
 
 .footer-link{
     color: var(--coach-gray-600);
@@ -342,7 +346,33 @@
     color: var(--coach-form-invalid-border-color);
 }
 
-.formulaire{
-    position: relative;
-    margin-bottom: -100px;
+@media (max-width: 375px) {
+    .video {
+    width: 80%;
+    height: 30vh;
+    background: url('../images/restaurant-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    margin: -150px auto 0 auto;
+    }
+
+    .container, .row, .card, section{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .custom-row{
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .espace-exterieur{
+        padding: 0;
+    }
+
+
 }
