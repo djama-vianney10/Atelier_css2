@@ -18,16 +18,16 @@
 <body>
 
     <!--L'entête de la page-->
-    <nav class="navbar navbar-expand-lg fixed-top liquide-glass shadow-sm  bordor-couleur py-4">
+<nav class="navbar navbar-expand-lg fixed-top bordor-couleur py-3   "><!--shadow-sm, liguide-glass-->
   <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="./images/freshcart-logo.svg" alt="" class="img-fluid w-75">
+    <a class="navbar-brand text-white fw-bold merriweather" href="#">
+      Africanfood
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link  home-active" href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
         </li>
@@ -38,33 +38,36 @@
           <a class="nav-link  lead other-link" href="#">About <i class="fa-solid fa-chevron-down"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link lead other-link">Contact</a>
+          <a class="nav-link lead other-link">Contact <i class="fa-solid fa-chevron-down"></i></a>
         </li>
       </ul>
+      <div class="other-app">
+        <a href="" class=" btn btn-sm btn-danger">Agence de Voyage</a>
+      </div>
     </div>
   </div>
 </nav>
 
 <!--La section hero-->
 <section class="hero position-relative">
-    <div class="position-absolute bg-dark top-0 bottom-0 start-0 end-0 opacity-75"></div>
+    <div class="position-absolute bg-dark top-0 bottom-0 start-0 end-0 opacity-25"></div>
     <div class="container position-relative">
         <div class="row align-items-center">
-            <div class="col text-center">
-                <h1 class="display-4 redressed text-white fw-bold">Un voyage <span class="span-culinaire">culinaire</span> aux mille saveurs &#128588</h1>
-                <p class="lead text-white merriweather ">Explorez des plats venus d’ailleurs, inspirés des traditions d’Afrique, d’Asie ou d’Amérique latine. Chaque bouchée vous transporte.</p>
-                <a href="#" class="btn fond-couleur">Command Now</a>
+            <div class="col text-center z-1">
+                <h1 class="display-2 redressed text-white fw-bold">Un voyage <span class="span-culinaire">culinaire</span> aux mille saveurs</h1><!--&#128588-->
+                <p class="lead text-white merriweather ">Explorez des plats venus d’ailleurs, inspirés des traditions d’Afrique, <br> d’Asie ou d’Amérique latine. Chaque bouchée vous transporte.</p>
+                <a href="#" class="btn btn-lg fond-couleur">Réserver maintenant</a>
             </div>
         </div>
     </div>
 </section>
 
 <!--section publicite-->
-<section class="pub">
+<section class="pub mb-5">
     <div class="container">
         <div class=" video d-flex align-items-center justify-content-center rounded-4">
             <a href="https://youtu.be/BuZzpQgyDYM" class="rond text-decoration-none" data-fancybox="gallery" data-caption="Caption #1">
-               <i class="fa-regular fa-circle-play fa-2x text-success"></i>
+               <i class="fa-regular fa-circle-play fa-2x text-danger"></i>
             </a>
         </div>
     </div>
@@ -72,9 +75,9 @@
 
 
 <!--La section des Menus-->
-<section class="menu mt-5">
+<section class="menu py-5">
     <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center mb-5">
             <div class="col-lg-9">
                 <h1 class="display-4 text-capitalize lead">Nos menus au Programmes</h1>
                 <p class="lead text-secondary h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse arcu vulputate velit scelerisque</p>
@@ -87,68 +90,84 @@
         </div>
 
         <div class="row align-items-center py-5">
-            <div class="col-lg-4 col-md-12 mb-3">
-                <div class="card shadow-sm rounded-4 h-100 position-relative overflow-hidden card-hover border-0 border-top border-primary border-5">
+        <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow-lg rounded-4 h-100 position-relative overflow-hidden card-hover border-0">
+                <!-- Image du plat -->
                 <div class="image w-100 h-100 position-relative overflow-hidden">
-                    <img src="./images/hamburger.jpg" class="img-fluid w-100 object-fit-cover" alt="Plat 1">
+                    <img src="./images/hamburger.jpg" class="img-fluid w-100 object-fit-cover" alt="Hamburger">
                 </div>
-                <div class="card-img-overlay d-flex flex-column justify-content-end">
-                    <span class="badge text-bg-dark w-50 w-md-25 py-3 fw-bold">Hamburger</span>
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-chevron-right text-dark"></i>
-                        <span class="ms-2 text-white lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, in.</span>
+                <!-- Overlay avec contenu -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient bg-opacity-50 p-3">
+                    <!-- Titre du plat -->
+                    <span class="badge bg-danger text-white w-50 py-2 fs-6 fw-semibold shadow">Hamburger</span>
+        
+                    <!-- Prix -->
+                    <div class="d-flex align-items-center mt-2">
+                        <i class="fas fa-tag text-warning fs-5"></i>
+                        <span class="ms-2 text-light fw-semibold fs-6">Prix : <span class="text-warning">750 FCFA</span></span>
                     </div>
-
-                    
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-money-check text-dark"></i>
-                        <span class="ms-2 text-white fw-bold lead">Prix: 750 FCFA</span>
+                    <!-- Bouton ajouter au panier -->
+                    <div class="mt-3">
+                        <a href="#" class="btn btn-success btn-sm rounded-pill px-3 shadow-sm">
+                            <i class="fas fa-cart-plus me-2"></i> Ajouter au panier
+                        </a>
                     </div>
-                </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-lg-4 col-md-12 mb-3">
-                 <div class="card shadow-sm rounded-4 h-100 position-relative overflow-hidden card-hover border-0 border-top border-danger border-5">
+
+             <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow-lg rounded-4 h-100 position-relative overflow-hidden card-hover border-0">
+                <!-- Image du plat -->
                 <div class="image w-100 h-100 position-relative overflow-hidden">
-                    <img src="./images/foutou.jpg" class="img-fluid w-100 object-fit-cover" alt="Plat 2">
+                    <img src="./images/foutou.jpg" class="img-fluid w-100 object-fit-cover" alt="Hamburger">
                 </div>
-                  <div class="card-img-overlay d-flex flex-column justify-content-end">
-                    <span class="badge text-bg-dark w-50 w-md-25 py-3 fw-bold">Foutou & Sauce</span>
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-chevron-right text-white"></i>
-                        <span class="ms-2 text-white lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, in.</span>
+                <!-- Overlay avec contenu -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient bg-opacity-50 p-3">
+                    <!-- Titre du plat -->
+                    <span class="badge bg-danger text-white w-50 py-2 fs-6 fw-semibold shadow">Foutou</span>
+        
+                    <!-- Prix -->
+                    <div class="d-flex align-items-center mt-2">
+                        <i class="fas fa-tag text-warning fs-5"></i>
+                        <span class="ms-2 text-light fw-semibold fs-6">Prix : <span class="text-warning">1750 FCFA</span></span>
                     </div>
-
-                    
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-money-check text-white"></i>
-                        <span class="ms-2 text-white fw-bold lead">Prix: 1500 FCFA</span>
+                    <!-- Bouton ajouter au panier -->
+                    <div class="mt-3">
+                        <a href="#" class="btn btn-success btn-sm rounded-pill px-3 shadow-sm">
+                            <i class="fas fa-cart-plus me-2"></i> Ajouter au panier
+                        </a>
                     </div>
-                </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-lg-4 col-md-12 mb-3">
-                 <div class="card shadow-sm rounded-4 h-100 position-relative overflow-hidden card-hover border-0 border-top border-warning border-5">
+         <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow-lg rounded-4 h-100 position-relative overflow-hidden card-hover border-0">
+                <!-- Image du plat -->
                 <div class="image w-100 h-100 position-relative overflow-hidden">
-                    <img src="./images/poulet.jpg" class="img-fluid w-100 object-fit-cover" alt="Plat 2">
+                    <img src="./images/poulet.jpg" class="img-fluid w-100 object-fit-cover" alt="Hamburger">
                 </div>
-                  <div class="card-img-overlay d-flex flex-column justify-content-end">
-                    <span class="badge text-bg-dark w-50 w-md-25 py-3 fw-bold">Poulet & Rôti</span>
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-chevron-right text-white"></i>
-                        <span class="ms-2 text-white lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, in.</span>
+                <!-- Overlay avec contenu -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient bg-opacity-50 p-3">
+                    <!-- Titre du plat -->
+                    <span class="badge bg-danger text-white w-50 py-2 fs-6 fw-semibold shadow">Poulet rôti</span>
+        
+                    <!-- Prix -->
+                    <div class="d-flex align-items-center mt-2">
+                        <i class="fas fa-tag text-warning fs-5"></i>
+                        <span class="ms-2 text-light fw-semibold fs-6">Prix : <span class="text-warning">2750 FCFA</span></span>
                     </div>
-
-                    
-                    <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-money-check text-white"></i>
-                        <span class="ms-2 text-white fw-bold lead">Prix: 2500 FCFA</span>
+                    <!-- Bouton ajouter au panier -->
+                    <div class="mt-3">
+                        <a href="#" class="btn btn-success btn-sm rounded-pill px-3 shadow-sm">
+                            <i class="fas fa-cart-plus me-2"></i> Ajouter au panier
+                        </a>
                     </div>
-                </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -235,6 +254,78 @@
         </div>
         <div class=" rounded-3 bg-light mx-auto end-0 start-0 top-auto bottom-auto h-100 position-absolute mw-900"></div>
     </div>
+    </div>
+</section>
+
+
+<!--La section Questions-->
+<section class="py-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+            <div class="col-lg-12 col-md-6 mb-5">
+                <h2>Questions ?</h2>
+            </div>
+            <div class="col-lg-12 col-md-6">
+            <div class="accordion mx-auto " id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Quels sont vos horaires d'ouverture?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contenu de l’accordéon 1.</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Proposez-vous des plats à emporter?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contenu de l’accordéon 2.</strong>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Faites-vous la livraison ?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contenu de l’accordéon 3.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Faut-il réserver une table ?
+                        </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contenu de l’accordéon 4.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
     </div>
 </section>
 

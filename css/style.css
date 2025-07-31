@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 :root {
@@ -153,22 +154,21 @@
 }
 
 .bordor-couleur{
-    border-top: 2px solid #E0A458;
+    border-top: 2px solid var(--coach-red);
 }
-
-.liquide-glass{
+ /* .liquide-glass{
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-}
+}  */
 
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    height: 130vh;
     width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) , rgba(255, 255, 255, 0)), url('../images/hero2.jpg');
+    background: linear-gradient(180deg, rgba(6, 5, 5, 0.829) , rgba(6, 5, 5, 0.829)), url('../images/mange1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,39 +176,40 @@
 
 .span-culinaire{
     font-weight: normal;
-    color: var(--coach-color);
+    color: var(--coach-red);
 }
 
 .home-active{
-    color: var( --coach-color);
+    color: var( --coach-danger);
 }
 
 .home-active:hover{
-    color: var(--coach-color1);
+    color: var(--coach-white);
 }
 
 .other-link{
-    color: var(--coach-color1);
+    color: var(--coach-white);
 }
 
 .other-link:hover{
-    color: var(--coach-color);
+    color: var(--coach-danger);
 }
 
 
 .fond-couleur{
-    background-color: var(--coach-color);
+    background-color: var(--coach-orange);
     color: #fff;
+    border: none;
 }
 
 .fond-couleur:hover{
-    background-color: var(--coach-color);
-    color: #fff;
+    background-color: var(--coach-white);
+    color: #000;
     opacity: 0.8;
 }
 
 .video{
-    width: 100%;
+    width: 80%;
     height: 80vh;
     background: url('../images/restaurant-4.jpg');
     background-position: center;
@@ -249,12 +250,12 @@
 
 
 .couleur-about{
-    background-color: var(--coach-color);
+    background-color: var(--coach-orange);
     color: #fff;
 }
 
 .couleur-about:hover{
-    background-color: var(--coach-color1);
+    background-color: var(--coach-danger);
     color: #fff;
 }
 
@@ -277,6 +278,33 @@
 .mw-900{
     max-width: 900px;
 }
+
+  /* Bordures noires pour les éléments de l'accordéon */
+.accordion-item {
+    border: 1px solid #000; /* noir pur */
+  }
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+   /* Bordure noire autour du bouton d'en-tête */
+  .accordion-button {
+    border-bottom: 1px solid #000;
+  }
+
+  /* Optionnel : changer aussi les bordures intérieures lors de l'ouverture */
+  .accordion-collapse {
+    border-top: none;
+    border-bottom: 1px solid #000;
+  }
+  /* Supprime la couleur blue lorsqu'un accordeon est ouvert*/
+  .accordion-button:not(.collapsed){
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
 
 .input-champ{
     width: 100%;
@@ -348,7 +376,7 @@
 
 @media (max-width: 375px) {
     .video {
-    width: 80%;
+    width: 90%;
     height: 30vh;
     background: url('../images/restaurant-4.jpg');
     background-position: center;
@@ -373,6 +401,5 @@
     .espace-exterieur{
         padding: 0;
     }
-
 
 }
