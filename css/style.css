@@ -156,11 +156,11 @@
 .bordor-couleur{
     border-top: 2px solid var(--coach-red);
 }
- /* .liquide-glass{
+ .liquide-glass{
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-}  */
+} 
 
 .hero{
     display: flex;
